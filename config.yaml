@@ -1,0 +1,38 @@
+baseURL: "https://example.com"
+
+defaultContentLanguage: "en"
+
+theme: "LoveIt"
+
+enableEmoji: true
+
+languages:
+  en:
+    weight: 1
+    languageCode: "en"
+    languageName: "English"
+    # whether to include Chinese/Japanese/Korean
+    hasCJKLanguage: false
+    # default amount of posts in each pages
+    paginate: 12
+    menu:
+      main:
+        - identifier: "posts"
+          pre: ""
+          post: ""
+          name: "Posts"
+          url: "/posts/"
+          title: ""
+          weight: 1
+        - identifier: "tags"
+          pre: ""
+          post: ""
+          name: "Tags"
+          url: "/tags/"
+          title: ""
+          weight: 2
+
+params:
+  version: "0.2.X"
+  # site default theme ("light", "dark", "auto")
+  defaultTheme: "auto"
