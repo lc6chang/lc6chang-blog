@@ -171,7 +171,7 @@ params:
     since: 2020
     license: |
       <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>
-  typeit: 
+  typeit:
     # typing speed between each step (measured in milliseconds)
     speed: 100
     # blinking speed of the cursor (measured in milliseconds)
