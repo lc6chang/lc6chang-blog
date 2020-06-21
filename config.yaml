@@ -5,8 +5,6 @@ defaultContentLanguage: "zh-cn"
 
 theme: "LoveIt"
 
-title: "lc6chang's blog"
-
 # whether to use robots.txt
 enableRobotsTXT: true
 # whether to use emoji code
@@ -23,6 +21,7 @@ languages:
     paginate: 12
     # copyright description used only for seo schema
     copyright: "This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License."
+    title: "lc6chang's blog"
     menu:
       main:
         - identifier: "posts"
@@ -61,6 +60,9 @@ languages:
           title: "GitHub"
           weight: 5
     params:
+      header:
+        title:
+          name: "lc6chang's blog"
       description: "This is lc6chang's blog"
       keywords: ["lc6chang", "blog", "technology", "software"]
       social:
@@ -88,6 +90,7 @@ languages:
     paginate: 12
     # copyright description used only for seo schema
     copyright: "This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License."
+    title: "lc6chang的博客"
     menu:
       main:
         - identifier: "posts"
@@ -126,8 +129,11 @@ languages:
           title: "GitHub"
           weight: 5
     params:
+      header:
+        title:
+          name: "lc6chang的博客"
       description: "lc6chang的个人博客"
-      keywords: ["lc6chang", "blog", "博客", "技术", "软件"]
+      keywords: ["lc6chang", "blog", "博客", "计算机技术", "软件"]
       social:
         GitHub: "https://github.com/lc6chang"
         Linkedin: "https://www.linkedin.com/in/chang-liu-1a607b17a/"
@@ -154,14 +160,6 @@ params:
     desktopMode: "fixed"
     # mobile header mode ("fixed", "normal", "auto")
     mobileMode: "auto"
-    # Header title config
-    logo: ""
-    # title name
-    name: "lc6chang's blog"
-    pre: "<i class='far fa-kiss-wink-heart fa-fw'></i>"
-    post: ""
-    # whether to use typeit animation for title name
-    typeit: true
   footer:
     enable: true
     custom: ""
@@ -180,6 +178,10 @@ params:
     cursorChar: "|"
     # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
     duration: -1
+  analytics:
+    enable: true
+    google:
+      id: "UA-153223502-1"
 
 author:
   name: "lc6chang"
