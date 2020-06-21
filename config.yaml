@@ -21,7 +21,7 @@ languages:
     paginate: 12
     # copyright description used only for seo schema
     copyright: "This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License."
-    title: "lc6chang's blog"
+    title: "lc6chang's Blog"
     menu:
       main:
         - identifier: "posts"
@@ -62,9 +62,9 @@ languages:
     params:
       header:
         title:
-          name: "lc6chang's blog"
-      description: "This is lc6chang's blog"
-      keywords: ["lc6chang", "blog", "technology", "software"]
+          name: "lc6chang's Blog"
+      description: "This is lc6chang's Blog"
+      keywords: ["lc6chang", "blog", "technology", "software engineering"]
       social:
         GitHub: "lc6chang"
         Linkedin: "chang-liu-1a607b17a"
@@ -133,7 +133,7 @@ languages:
         title:
           name: "lc6chang的博客"
       description: "lc6chang的个人博客"
-      keywords: ["lc6chang", "blog", "博客", "计算机技术", "软件"]
+      keywords: ["lc6chang", "博客", "计算机科学与技术", "软件工程"]
       social:
         GitHub: "lc6chang"
         Linkedin: "chang-liu-1a607b17a"
