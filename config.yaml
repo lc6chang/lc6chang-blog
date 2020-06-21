@@ -1,9 +1,15 @@
 baseURL: "https://blog.lc6chang.com"
 
-defaultContentLanguage: "en"
+# [en, zh-cn, fr, pl, ...] determines default content language
+defaultContentLanguage: "zh-cn"
 
 theme: "LoveIt"
 
+title: "lc6chang's blog"
+
+# whether to use robots.txt
+enableRobotsTXT: true
+# whether to use emoji code
 enableEmoji: true
 
 languages:
@@ -15,6 +21,8 @@ languages:
     hasCJKLanguage: false
     # default amount of posts in each pages
     paginate: 12
+    # copyright description used only for seo schema
+    copyright: "This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License."
     menu:
       main:
         - identifier: "posts"
@@ -24,19 +32,62 @@ languages:
           url: "/posts/"
           title: ""
           weight: 1
+        - identifier: "categories"
+          pre: ""
+          post: ""
+          name: "Categories"
+          url: "/categories/"
+          title: ""
+          weight: 2
         - identifier: "tags"
           pre: ""
           post: ""
           name: "Tags"
           url: "/tags/"
           title: ""
-          weight: 2
+          weight: 3
+        - identifier: "about"
+          pre: ""
+          post: ""
+          name: "About"
+          url: "/about/"
+          title: ""
+          weight: 4
+        - identifier: "github"
+          pre: "<i class='fab fa-github fa-fw'></i>"
+          post: ""
+          name: ""
+          url: "https://github.com/lc6chang/lc6chang-blog"
+          title: "GitHub"
+          weight: 5
+    params:
+      description: "This is lc6chang's blog"
+      keywords: ["lc6chang", "blog", "technology", "software"]
+      social:
+        GitHub: "https://github.com/lc6chang"
+        Linkedin: "https://www.linkedin.com/in/chang-liu-1a607b17a/"
+        Email: "lc6chang@gmail.com"
+        Stackoverflow: "https://stackoverflow.com/users/10839541/liuchang"
+      home:
+        profile:
+          enable: true
+          gravatarEmail: "1061974239@qq.com"
+          title: ""
+          subtitle: "A Software Engineer's Personal Blog"
+          typeit: true
+          social: true
+        posts:
+          enable: true
+          paginate: 6
+
   zh-cn:
     weight: 2
     languageCode: "zh-CN"
     languageName: "简体中文"
     hasCJKLanguage: true
     paginate: 12
+    # copyright description used only for seo schema
+    copyright: "This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License."
     menu:
       main:
         - identifier: "posts"
@@ -46,8 +97,90 @@ languages:
           url: "/posts/"
           title: ""
           weight: 1
+        - identifier: "categories"
+          pre: ""
+          post: ""
+          name: "分类"
+          url: "/categories/"
+          title: ""
+          weight: 2
+        - identifier: "tags"
+          pre: ""
+          post: ""
+          name: "标签"
+          url: "/tags/"
+          title: ""
+          weight: 3
+        - identifier: "about"
+          pre: ""
+          post: ""
+          name: "关于"
+          url: "/about/"
+          title: ""
+          weight: 4
+        - identifier: "github"
+          pre: "<i class='fab fa-github fa-fw'></i>"
+          post: ""
+          name: ""
+          url: "https://github.com/lc6chang/lc6chang-blog"
+          title: "GitHub"
+          weight: 5
+    params:
+      description: "lc6chang的个人博客"
+      keywords: ["lc6chang", "blog", "博客", "技术", "软件"]
+      social:
+        GitHub: "https://github.com/lc6chang"
+        Linkedin: "https://www.linkedin.com/in/chang-liu-1a607b17a/"
+        Email: "lc6chang@gmail.com"
+        Stackoverflow: "https://stackoverflow.com/users/10839541/liuchang"
+      home:
+        profile:
+          enable: true
+          gravatarEmail: "1061974239@qq.com"
+          title: ""
+          subtitle: "一个码农的个人博客"
+          typeit: true
+          social: true
+        posts:
+          enable: true
+          paginate: 6
 
 params:
   version: "0.2.X"
   # site default theme ("light", "dark", "auto")
   defaultTheme: "auto"
+  header:
+    # desktop header mode ("fixed", "normal", "auto")
+    desktopMode: "fixed"
+    # mobile header mode ("fixed", "normal", "auto")
+    mobileMode: "auto"
+    # Header title config
+    logo: ""
+    # title name
+    name: "lc6chang's blog"
+    pre: "<i class='far fa-kiss-wink-heart fa-fw'></i>"
+    post: ""
+    # whether to use typeit animation for title name
+    typeit: true
+  footer:
+    enable: true
+    custom: ""
+    hugo: true
+    copyright: true
+    author: true
+    since: 2020
+    license: |
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>
+  typeit: 
+    # typing speed between each step (measured in milliseconds)
+    speed: 100
+    # blinking speed of the cursor (measured in milliseconds)
+    cursorSpeed: 1000
+    # character used for the cursor (HTML format is supported)
+    cursorChar: "|"
+    # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
+    duration: -1
+
+author:
+  name: "lc6chang"
+  email: "lc6chang@gmail.com"
